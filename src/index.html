@@ -4,40 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APP QUIZ | ISLAMIC</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./output.css">
 </head>
 <body class="lg:overflow-y-hidden">
     <!-- 
         PARTIE PRINCIPAL DU SITE
     -->
     <main class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="w-full h-screen pt-4 lg:pt-10 pb-4 px-8 relative">
+        <div class="w-full h-screen pt-4 lg:pt-10 pb-4 px-5 lg:px-8 relative">
             <header class="flex items-center justify-between mb-10">
                 <div>
                     <a href="index.html" class="inline-block text-2xl text-fuchsia-950 font-bold">Quiz<span class="inline-block text-2xl text-black">.</span>Islamic</a>
                 </div>
-                <nav class="group">
+                <!-- MENU DE NAVIGATION -->
+                <nav class="group relative">
                     <input class="hidden" type="checkbox" id="burger">
-                    <label for="burger" class="inline-block md:hidden">
-                        <span class="inline-block text-2xl font-bold text-white rotate-90">|||</span>
+                    <label for="burger" class="inline-block cursor-pointer md:hidden">
+                        <span class="inline-block text-2xl font-bold">
+                            <!-- LOGO OPEN MENU -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 group-has-[:checked]:hidden">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                            </svg> 
+                            <!-- LOGO CLOSE MENU -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 hidden group-has-[:checked]:block">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+                        </span>
                     </label>
-                    <ul class="flex items-center gap-4 ">
-                        <li class="text-lg text-fuchsia-900 hover:text-black">
-                            <a href="index.html">Accueil</a>
+                    <ul class="hidden group-has-[:checked]:absolute group-has-[:checked]:-left-14 group-has-[:checked]:bg-fuchsia-600 group-has-[:checked]:p-4 group-has-[:checked]:flex flex-col md:flex-row md:flex md:items-center gap-4">
+                        <li>
+                            <a href="index.html" class="text-lg text-white md:text-fuchsia-900 md:hover:text-black">Accueil</a>
                         </li>
-                        <li class="text-lg text-fuchsia-900 hover:text-black">
-                            <a href="#">Cours</a>
+                        <li>
+                            <a href="#" class="text-lg text-white md:text-fuchsia-900 md:hover:text-black">Cours</a>
                         </li>
-                        <li class="text-lg text-fuchsia-900 hover:text-black">
-                            <a href="#">Blog</a>
+                        <li>
+                            <a href="#" class="text-lg text-white md:text-fuchsia-900 md:hover:text-black">Blog</a>
                         </li>
                     </ul>
                 </nav>
+                <!-- FIN MENU DE NAVIGATION -->
             </header>
 
-            <div>
+            <div class="max-md:flex max-md:flex-col max-md:justify-center max-md:items-center">
                 <h1 class="text-4xl font-bold text-fuchsia-600 mb-3 capitalize">Testez votre cerveau avec des questions religieuses</h1>
-                <p class="text-sm text-fuchsia-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio, a optio aut ea quod. Totam nisi nobis perferendis repellendus quos neque vero ea exercitationem? In voluptatum error corporis ipsa.</p>
+                <p class="text-sm text-fuchsia-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio, a optio aut ea quod. Totam nisi nobis perferendis repellendus quos neque vero ea exercitationem? In voluptatum error corporis ipsa.</p>
                 <p>
                     <img src="../images/31198660_7800337.svg" alt="" class="w-full h-full object-">
                 </p>
@@ -52,7 +63,7 @@
     </main>
 
     <!-- 
-        PARTIE PRINCIPAL DU SITE
+       FIN PARTIE PRINCIPAL DU SITE
     -->
 
 
